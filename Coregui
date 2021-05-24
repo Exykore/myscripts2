@@ -1,0 +1,67 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local CoreGUI = Instance.new("TextLabel")
+local ADMIN = Instance.new("TextButton")
+local NoclipF = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+main.BorderSizePixel = 2
+main.Position = UDim2.new(0.0952380896, 0, 0.394273132, 0)
+main.Size = UDim2.new(0, 181, 0, 190)
+main.Active = true
+main.Draggable = true
+
+CoreGUI.Name = "CoreGUI"
+CoreGUI.Parent = main
+CoreGUI.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+CoreGUI.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CoreGUI.Size = UDim2.new(0, 181, 0, 36)
+CoreGUI.Font = Enum.Font.ArialBold
+CoreGUI.Text = "CoreGUI"
+CoreGUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+CoreGUI.TextScaled = true
+CoreGUI.TextSize = 14.000
+CoreGUI.TextWrapped = true
+
+ADMIN.Name = "ADMIN"
+ADMIN.Parent = main
+ADMIN.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+ADMIN.Position = UDim2.new(0.192822069, 0, 0.574521303, 0)
+ADMIN.Size = UDim2.new(0, 111, 0, 35)
+ADMIN.Font = Enum.Font.SourceSansBold
+ADMIN.Text = "ADMIN"
+ADMIN.TextColor3 = Color3.fromRGB(0, 0, 0)
+ADMIN.TextScaled = true
+ADMIN.TextSize = 14.000
+ADMIN.TextWrapped = true
+ADMIN.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Exykore/myscripts2/main/.gitignore"),true))
+end)
+
+NoclipF.Name = "Noclip (F)"
+NoclipF.Parent = main
+NoclipF.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+NoclipF.Position = UDim2.new(0.192822069, 0, 0.239473671, 0)
+NoclipF.Size = UDim2.new(0, 111, 0, 35)
+NoclipF.Font = Enum.Font.SourceSansBold
+NoclipF.Text = "Noclip (F)"
+NoclipF.TextColor3 = Color3.fromRGB(0, 0, 0)
+NoclipF.TextScaled = true
+NoclipF.TextSize = 14.000
+NoclipF.TextWrapped = true
+NoclipF.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Exykore/myscripts2/main/Noclip"),true))
+end)
